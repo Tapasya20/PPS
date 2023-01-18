@@ -1,0 +1,39 @@
+#include<stdio.h>
+void main()
+{
+    int i,j,m,n,t;
+    for(i=1;i<=4;i++)
+    {
+        n=4;t=4;
+        for(j=1;j<i;j++)
+        {
+            printf("%d",n);
+            n--;
+        }
+        for(j=i;j<=(7-i+1);j++)
+        printf("%d",(5-i));
+        for(j=7;j>=(9-i);j--)
+        {
+            printf("%d",t);
+            t--;
+        }
+        printf("\n");
+    }
+    for(i=5;i<=7;i++)
+    {
+        n=4;t=4;
+        for(j=1;j<=(8-i);j++)
+        {
+            printf("%d",n);
+            n--;
+        }
+        for(j=(9-i);j<=(i-1);j++)
+        printf("%d",(i-n+1));
+        for(j=7;j>=(i-1+1);j--)
+        {
+            printf("%d",t);
+            t--;
+        }
+        printf("\n");
+    }
+}
